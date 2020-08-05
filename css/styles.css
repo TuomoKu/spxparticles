@@ -19,7 +19,7 @@ a, a:visited{
 
 .particleContainer{
     position: relative;
-    background-image: url('../img/metal.jpg'); /* (CC BY 2.0) Webtreats: https://www.flickr.com/photos/webtreatsetc/4682148161 */
+    /* background-image: url('../img/metal.jpg'); (CC BY 2.0) Webtreats: https://www.flickr.com/photos/webtreatsetc/4682148161 */
     background-size: 500px;    
     width: 100%;
     height: 100%;
