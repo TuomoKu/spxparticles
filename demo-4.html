@@ -1,0 +1,114 @@
+<html>
+    <head>
+        
+        <!-- 
+            
+            SPX Canvas Particles
+            Performant stream or a burst of particles on HTML canvas.
+
+            Let me know if you find this useful 👍
+ 
+            _________________________
+            MIT License
+            (c) 2020 tuomo@smartpx.fi
+            SmartPX.fi
+            
+        -->
+        
+        <script type="text/javascript" src="spxparticles.js"></script>
+        <script>
+            var spxParticleSettings = {
+                p_texture     :  '../img/gear.png', 
+                p_blending    :  '',              /* (empty), screen, overlay, multiply, color-dodge... */
+                emit_delay    :  10,              /* Delay in between each new particle (small = performance impact!)   */
+                emit_left     :  40,              /* Emitter zone left % */
+                emit_right    :  60,              /* Emitter zone right % */
+                emit_top      :  45,              /* Emitter zone top % */
+                emit_bottom   :  55,              /* Emitter zone bottom % */
+                zone_visible  :  false,           /* Preview emitter zone on canvas */
+                gravity       :  10,              /* Y move speed (negative: up) */
+                rnd_grav_mult :  3,               /* Random speed multiplier */
+                spread_x      :  4,               /* Dispersion value */
+                wind          :  0,               /* Horizontal push force */
+                wave_size     :  0,               /* Size of wavy motion */
+                wave_freq     :  20,              /* Speed of wavy motion */
+                p_life        :  150,             /* Maximum particle lifespan duration */
+                p_rnd_life    :  2,               /* Randomize lifespan */
+                p_size        :  70,              /* Particle born size in pixels */
+                p_rnd_size    :  50,              /* Randomize size */
+                p_size_mult   :  1.005,           /* Size multiplier, scale down/up gradually */
+                p_rotation    :  0,               /* Spawn rotation (deg) */
+                p_rnd_rot     :  180,             /* Randomize rotation (deg) */
+                p_rot_wobble  :  false,           /* wobble back and forth? */
+                p_rot_amount  :  2,               /* Rotation speed */
+                p_rot_wofreq  :  40,              /* Wobble frequency */
+                p_rot_dual    :  true,            /* both directions CW and CCW */ 
+                p_opacity     :  100,             /* Opacity of a particle when born (%) */
+                p_rnd_opa     :  0,               /* Randomize born opacity (%) */
+                p_opa_mult    :  1.0,             /* Opacity multiplier, fade gradually */
+                p_fade_start  :  10,              /* When do we start to fade out */
+                p_rnd_fstart  :  0                /* Randomize fade start age */
+            };
+            window.addEventListener('DOMContentLoaded',(e) => {
+                const GENERATE = '7'; 
+                const INFINITE = '';
+                spawnSPXParticles('SPX_ParticleCanvas', GENERATE);
+            });
+
+
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <style>
+            .center{
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                }
+            
+            button{
+                font-size: 1.5em;
+                padding: 0.4em 1em;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="particleContainer">
+            <div id="particle-count-display" class="debug"></div>
+            <canvas id="SPX_ParticleCanvas" class="particleCanvas"></canvas>
+
+            <div class="center">
+                <button id="mybutton"  onclick="spawnSPXParticles('SPX_ParticleCanvas', 7);">Shoot</button>
+            </div>
+
+            <div class="info">
+                <P><B>SPX Canvas Particles</B><BR>
+                <small>See source for configuration options.</small>
+                </P>
+                <P>
+                    Generate infinite particle stream or a burst of them.
+                    Emitter position, gravity, wind, fade and other various options can be configured for different effects.
+                    <BR><BR>
+                    <small>
+                    <a href="demo-1.html">Demo 1</a> &nbsp; | &nbsp;
+                    <a href="demo-2.html">Demo 2</a> &nbsp; | &nbsp;
+                    <a href="demo-3.html">Demo 3</a> &nbsp; | &nbsp;
+                    <a href="demo-4.html">Demo 4</a> 
+                    </small>
+                </P>
+                <P>
+                    <small>
+                    <a href="mailto:tuomo@smartpx.fi" target="_mail">tuomo@smartpx.fi</a>
+                </small>
+                </P>
+            </div>
+
+        </div>
+
+
+  </body>
+</html>
