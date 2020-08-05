@@ -5,6 +5,8 @@
 //
 // Performant stream or a burst of particles on HTML canvas.
 // Let me know if you find this useful 👍
+// 
+// https://github.com/TuomoKu/spxparticles
 // v.1.0.0 (8 Aug 2020)
 //
 // Usage: spawnSPXParticles('canvasElement');
