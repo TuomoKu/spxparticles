@@ -37,6 +37,7 @@ a, a:visited{
     position: absolute;
     z-index: 3;
     display: inline-block;
+    display: none;
     padding: 10px;
     background-color: rgba(0,0,0,0.6);
     font-family: sans-serif;
@@ -48,6 +49,7 @@ a, a:visited{
     bottom: 0;
     z-index: 4;
     display: inline-block;
+    display: none;
     max-width: 50%;
     padding: 12px;
     background-color: rgba(0, 0, 0, 0.8);

@@ -1,0 +1,92 @@
+<html>
+    <head>
+        
+        <!-- 
+            
+            SPX Canvas Particles
+            Performant stream or a burst of particles on HTML canvas.
+
+            Let me know if you find this useful 👍
+ 
+            _________________________
+            MIT License
+            (c) 2020 tuomo@smartpx.fi
+            SmartPX.fi
+            
+        -->
+        
+        <script type="text/javascript" src="spxparticles.js"></script>
+        <script>
+            var spxParticleSettings = {
+                p_texture     :  './img/fb-haha.png', 
+                p_blending    :  'color-dodge',   /* (empty), screen, overlay, multiply, color-dodge... */
+                emit_delay    :  30,              /* Delay in between each new particle (small = performance impact!)   */
+                emit_left     :  10,              /* Emitter zone left % */
+                emit_right    :  90,              /* Emitter zone right % */
+                emit_top      :  80,              /* Emitter zone top % */
+                emit_bottom   :  90,              /* Emitter zone bottom % */
+                zone_visible  :  false,           /* Preview emitter zone on canvas */
+                gravity       :  -4,              /* Y move speed (negative: up) */
+                rnd_grav_mult :  2,               /* Random speed multiplier */
+                spread_x      :  0.5,             /* Dispersion value */
+                wind          :  2,               /* Horizontal push force */
+                wave_size     :  1,               /* Size of wavy motion */
+                wave_freq     :  80,              /* Speed of wavy motion */
+                p_life        :  250,             /* Maximum particle lifespan duration */
+                p_rnd_life    :  20,              /* Randomize lifespan */
+                p_size        :  110,             /* Particle born size in pixels */
+                p_rnd_size    :  80,              /* Randomize size */
+                p_size_mult   :  0.98,            /* Size multiplier, scale down/up gradually */
+                p_rotation    :  0,               /* Spawn rotation (deg) */
+                p_rnd_rot     :  15,              /* Randomize rotation (deg) */
+                p_rot_wobble  :  true,            /* wobble back and forth? */
+                p_rot_amount  :  1.2,             /* Rotation speed */
+                p_rot_wofreq  :  40,              /* Wobble frequency */
+                p_rot_dual    :  false,           /* both directions CW and CCW */ 
+                p_opacity     :  100,             /* Opacity of a particle when born (%) */
+                p_rnd_opa     :  0,               /* Randomize born opacity (%) */
+                p_opa_mult    :  0.84,             /* Opacity multiplier, fade gradually */
+                p_fade_start  :  180,             /* When do we start to fade out */
+                p_rnd_fstart  :  20               /* Randomize fade start age */
+            };
+            window.addEventListener('DOMContentLoaded',(e) => {
+                const GENERATE = '100'; 
+                const INFINITE = '';
+                spawnSPXParticles('SPX_ParticleCanvas', INFINITE);
+            });
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+
+    <body>
+        <div class="particleContainer">
+            <div id="particle-count-display" class="debug"></div>
+            <canvas id="SPX_ParticleCanvas" class="particleCanvas"></canvas>
+
+            <div class="info">
+                <P><B>SPX Canvas Particles</B><BR>
+                <small>See source for configuration options.</small>
+                </P>
+                <P>
+                    Generate infinite particle stream or a burst of them.
+                    Emitter position, gravity, wind, fade and other various options can be configured for different effects.
+                    <BR><BR>
+                    <small>
+                    <a href="index.html">Demo 1</a> &nbsp; | &nbsp;
+                    <a href="demo-2.html">Demo 2</a> &nbsp; | &nbsp;
+                    <a href="demo-3.html">Demo 3</a> &nbsp; | &nbsp;
+                    <a href="demo-4.html">Demo 4</a> 
+                    </small>
+                </P>
+                <P>
+                    <small>
+                    <a href="mailto:tuomo@smartpx.fi" target="_mail">tuomo@smartpx.fi</a>
+                </small>
+                </P>
+            </div>
+
+        </div>
+
+
+  </body>
+</html>
