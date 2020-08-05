@@ -23,8 +23,8 @@
                 emit_delay    :  30,              /* Delay in between each new particle (small = performance impact!)   */
                 emit_left     :  5,              /* Emitter zone left % */
                 emit_right    :  10,              /* Emitter zone right % */
-                emit_top      :  40,              /* Emitter zone top % */
-                emit_bottom   :  60,              /* Emitter zone bottom % */
+                emit_top      :  45,              /* Emitter zone top % */
+                emit_bottom   :  55,              /* Emitter zone bottom % */
                 zone_visible  :  true,           /* Preview emitter zone on canvas */
                 gravity       :  -0.01,              /* Y move speed (negative: up) */
                 rnd_grav_mult :  2,               /* Random speed multiplier */
@@ -34,7 +34,7 @@
                 wave_freq     :  80,              /* Speed of wavy motion */
                 p_life        :  350,             /* Maximum particle lifespan duration */
                 p_rnd_life    :  20,              /* Randomize lifespan */
-                p_size        :  100,             /* Particle born size in pixels */
+                p_size        :  120,             /* Particle born size in pixels */
                 p_rnd_size    :  20,              /* Randomize size */
                 p_size_mult   :  1.01,            /* Size multiplier, scale down/up gradually */
                 p_rotation    :  0,               /* Spawn rotation (deg) */
@@ -56,21 +56,14 @@
             });
         </script>
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
-
-        <style>
-            .hide{
-                display:none;
-            }
-        </style>
-
     </head>
 
     <body>
         <div class="particleContainer">
-            <div id="particle-count-display" class="debug hide"></div>
+            <div id="particle-count-display" class="debug"></div>
             <canvas id="SPX_ParticleCanvas" class="particleCanvas"></canvas>
 
-            <div class="info hide">
+            <div class="info">
                 <P><B>SPX Canvas Particles</B><BR>
                 <small>See source for configuration options.</small>
                 </P>
@@ -82,7 +75,8 @@
                     <a href="index.html">Demo 1</a> &nbsp; | &nbsp;
                     <a href="demo-2.html">Demo 2</a> &nbsp; | &nbsp;
                     <a href="demo-3.html">Demo 3</a> &nbsp; | &nbsp;
-                    <a href="demo-4.html">Demo 4</a> 
+                    <a href="demo-4.html">Demo 4</a> &nbsp; | &nbsp;
+                    <a href="demo-5.html">Demo 5</a> 
                     </small>
                 </P>
                 <P>
